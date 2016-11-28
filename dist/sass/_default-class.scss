@@ -1,0 +1,28 @@
+.container{
+  width: 1280px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.vertical-align::before{
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: -4px;
+}
+.vertical-align > *{
+  display: inline-block;
+  vertical-align: middle;
+}
+.form-control{
+  width: 100%;
+  border: 2px solid #b5b5b5;
+  background: #fff;
+  height: 34px;
+  color: #5a5959;
+  font-size: 14px;
+  padding-left: 14px;
+}
+.form-control:focus{
+  border-color: #bc2336;
+}

@@ -1,0 +1,319 @@
+@import "default-class";
+@import "reset";
+@import "custom-var";
+@import "fonts";
+
+//HEADER START
+.header {
+  text-align: center;
+  height: 116px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+
+  .logo {
+    float: left;
+    margin-top: 11px;
+    margin-left: 6px;
+  }
+  .main-menu {
+    display: inline-block;
+    font-variant: small-caps;
+    font-size: 18px;
+    padding-top: 52px;
+    li {
+      float: left;
+      padding: 0 9.5px;
+    }
+    a:hover {
+      color: #db1f35;
+    }
+  }
+  .networks {
+    float: right;
+    margin-top: 45px;
+    margin-right: 4px;
+    li {
+      float: left;
+      & + li {
+        margin-left: 32px;
+      }
+      a {
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        background: url(../../app/img/networks-sprite.png);
+      }
+    }
+    .vk {
+      background-position: -48px -48px;
+    }
+    .twitter {
+      background-position: -48px -24px;
+    }
+    .google {
+      background-position: -48px 0;
+    }
+    .vk:hover {
+      background-position: -24px -48px;
+    }
+    .twitter:hover {
+      background-position: -24px -24px;
+    }
+    .google:hover {
+      background-position: -24px -0px;
+    }
+  }
+}
+
+//MAIN START
+.main {
+  .call-to-action {
+    background: url(../../app/img/inner-bg.jpg) no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 116px;
+    text-align: center;
+    .call-to-action-text {
+      h1 {
+        color: #fff;
+        font-size: 60px;
+        font-family: $lobster;
+        font-weight: normal;
+        padding-bottom: 12px;
+      }
+      span {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 30px;
+        border: 3px solid #bc2336;
+        color: #fff;
+        font-size: 22px;
+        line-height: 1.9;
+        padding: 4px 105px;
+        font-variant: small-caps
+      }
+    }
+  }
+  .about-us {
+    text-align: center;
+    padding-top: 76px;
+    h4 {
+      font-family: $lobster;
+      font-size: 36px;
+      padding-bottom: 30px;
+    }
+    p {
+      font-size: 20px;
+      width: 90%;
+      margin: 0 auto;
+      line-height: initial;
+    }
+  }
+  .services-warp {
+    font-size: 0;
+    padding-top: 60px;
+    .service {
+      display: inline-block;
+      width: 33.3333%;
+      padding: 0 10px;
+      position: relative;
+      margin-bottom: 30px;
+      .service-text {
+        width: 206px;
+        height: 206px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .85);
+        position: absolute;
+        top: 50%;
+        margin-top: -103px;
+        left: 50%;
+        margin-left: -103px;
+        text-align: center;
+        span {
+          width: 99%;
+        }
+        a {
+          display: inline-block;
+          width: 197px;
+          height: 197px;
+          border-radius: 50%;
+          text-align: center;
+          font-size: 18px;
+          color: #000;
+          margin-left: 4px;
+          border: 3px solid transparent;
+        }
+        a:hover {
+          border-color: #bc2336;
+          color: #bc2336;
+        }
+      }
+    }
+  }
+}
+
+//FOOTER START
+.footer {
+  background: #000;
+  position: relative;
+  padding: 25px 0;
+  text-align: center;
+  color: #fff;
+  h4 {
+    color: #fff;
+    font-size: 24px;
+    font-family: $lobster;
+    font-weight: normal;
+    padding-bottom: 39px;
+  }
+  span {
+    color: #fff;
+    font-size: 13px;
+  }
+  span > * {
+    padding-bottom: 5px;
+  }
+  .networks {
+    padding-top: 25px;
+    display: inline-block;
+    li {
+      float: left;
+      & + li {
+        margin-left: 23px;
+      }
+      a {
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        background: url(../../app/img/networks-sprite.png);
+      }
+      .vk {
+        background-position: -0px -48px;
+      }
+      .twitter {
+        background-position: -0px -24px;
+      }
+      .google {
+        background-position: -0px -0px;
+      }
+      .vk:hover {
+        background-position: -24px -48px;
+      }
+      .twitter:hover {
+        background-position: -24px -24px;
+      }
+      .google:hover {
+        background-position: -24px -0px;
+      }
+    }
+  }
+}
+
+//MODAL START
+.modal {
+  display: none;
+  background: #fff;
+  width: 755px;
+  height: 405px;
+  position: relative;
+  padding: 36px 28px 0;
+  text-align: center;
+  h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+    font-variant: small-caps;
+    font-weight: normal;
+  }
+  p {
+    font-size: 24px;
+    font-weight: normal;
+    font-family: $lobster;
+    margin-bottom: 35px;
+  }
+  .close{
+    border-radius: 50%;
+    border: 2px solid #bc2336;
+    width: 42px;
+    height:42px;
+    position: absolute;
+    top: 8px;
+    right: 7px;
+    &:hover{
+      background: #c84c5b;
+      span{
+        background: #FFF;
+      }
+    }
+    span{
+      position: absolute;
+      background: #dc2336;
+      height:2px;
+      width: 34px;
+      border-radius: 2px;
+      top: 18px;
+      right: 2px;
+    }
+    span:first-child{
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    span:last-child{
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+  }
+  .block {
+    width: 49%;
+    & > * {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &.left {
+      float: left;
+    }
+    &.right {
+      float: right;
+      textarea {
+        resize: none;
+        height: 98px;
+        width: 100%;
+        overflow: auto;
+        font-size: 14px;
+        padding-top: 9px;
+      }
+      select {
+        text-align: left;
+      }
+    }
+  }
+  .clearFix {
+    clear: both;
+  }
+  .btn {
+    width: 135px;
+    height: 45px;
+    font-size: 16px;
+    font-variant: small-caps;
+    background: #bc2336;
+    color: #fff;
+    border-radius: 2px;
+    margin-top: 17px;
+    font-weight: 100;
+    cursor: pointer;
+  }
+}
