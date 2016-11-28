@@ -2,6 +2,18 @@
   width: 1280px;
   padding: 0 10px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    width: 1156px;
+  }
+  @media (max-width: 1172px) {
+    width: 933px;
+  }
+  @media (max-width: 950px) {
+    width: 100%;
+  }
+  @media (max-width: 767px) {
+
+  }
 }
 .vertical-align::before{
   content: '';
